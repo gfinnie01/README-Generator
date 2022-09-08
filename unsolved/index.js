@@ -64,15 +64,15 @@ inquirer
 
 const template =`# ${title}
   ## License:
-  [![license]](https://img.shields.io/badge/license-YOUR_LICENSE-WHATEVER_COLOR)
+  https://img.shields.io/apm/l/readme
   ## Table of Contents
+  *[discription](#discription)
   *[Installation](#install)
   *[Usage](#usage)
   *[License](#license)
   *[Contributing](#Contributing)
   *[Tests](#tests)
   *[Questions](#questions)
-  *[discription](#discription)
 
   ## discription:
   ${discription}
