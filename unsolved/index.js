@@ -5,18 +5,33 @@ inquirer
   .prompt([
     {
       type: 'input',
-      message: 'What is your name?',
-      name: 'name',
+      message: 'what is the title of your README.md?',
+      name: 'title',
     },
     {
       type: 'input',
-      message: 'What languages do you know?',
-      name: 'password',
+      message: 'how do you install this app?',
+      name: 'install',
     },
     {
       type: 'input',
-      message: 'What is your preferred method of communication?',
-      name: 'confirm',
+      message: 'what is the use of this app?',
+      name: 'usage',
+    },
+    {
+      type: 'input',
+      message: 'what is the license that you used?',
+      name: 'license',
+    },
+    {
+      type: 'input',
+      message: 'what are the test instrucions?',
+      name: 'test',
+    },
+    {
+      type: 'input',
+      message: 'waht questions are there?',
+      name: 'questions',
     },
 ])
 .then((response) => {
