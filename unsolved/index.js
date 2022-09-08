@@ -10,8 +10,8 @@ inquirer
     },
     {
       type: 'input',
-      message: 'what is a discription of your app?',
-      name: 'discription',
+      message: 'what is a description of your app?',
+      name: 'description',
     },
     {
       type: 'input',
@@ -66,7 +66,7 @@ const template =`# ${title}
   ## License:
   https://img.shields.io/apm/l/readme
   ## Table of Contents
-  ### *[discription](#discription)
+  ### *[description](#description)
   ### *[Installation](#install)
   ### *[Usage](#usage)
   ### *[License](#license)
@@ -74,8 +74,8 @@ const template =`# ${title}
   ### *[Tests](#tests)
   ### *[Questions](#questions)
 
-  ## discription:
-  ${discription}
+  ## description:
+  ${description}
   ## Installation:
   ${install}
   ## Usage
@@ -97,5 +97,5 @@ function createNewFile(fileName,data){
     if(err){
       console.log(err)
     }
-    console.log('you are compleate');
+    console.log('you are complete');
 })}

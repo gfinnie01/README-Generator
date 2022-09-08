@@ -1,16 +1,16 @@
 # read-me-generator
   ## Table of Contents
-  ### *[discription](#discription)
-  ### *[Installation](#install)
-  ### *[Usage](#usage)
-  ### *[visuals](#visuals)
-  ### *[License](#license)
-  ### *[Contributing](#Contributing)
-  ### *[Tests](#test)
-  ### *[Questions](#questions)
-
-  ## discription:
-  this app lets you make a read me from scratch with not having to go in a read me file and make one so no need to having to go back and make your own from scratch each time.
+*[description](#discription)
+*[Installation](#install)
+*[Usage](#usage)
+*[visuals](#visuals)
+*[License](#license)
+*[Contributing](#Contributing)
+*[Tests](#tests)
+*[Questions](#questions)
+ 
+  ## description:
+  This app lets you make a readme from scratch without having to go in a readme file and make one so no need to have to go back and make your own from scratch each time.
   ## Installation:
   all you do to install is go on my repository and then run the insex.js in your own repository
   ## visuals:
