@@ -10,6 +10,11 @@ inquirer
     },
     {
       type: 'input',
+      message: 'what is a discription of your app?',
+      name: 'discription',
+    },
+    {
+      type: 'input',
       message: 'how do you install this app?',
       name: 'install',
     },
@@ -32,15 +37,65 @@ inquirer
     },
     {
       type: 'input',
-      message: 'what are the test instrucions?',
-      name: 'test',
+      message: 'what is your E-mail?',
+      name: 'questions2',
     },
     {
       type: 'input',
       message: 'what is your github?',
-      name: 'questions',
+      name: 'questions1',
+    },
+    {
+      type: 'input',
+      message: 'who helped make this app?',
+      name: 'Contributing',
+    },
+    {
+      type: 'input',
+      message: 'how do you test the app?',
+      name: 'tests',
     },
 ])
-.then((response) => {
-    fs.writeFileSync('README.md', JSON.stringify(response))
+
+.then(({
+  title, install, usage, Contributing, tests, questions1, license, discription,
+  questions2,
+}) => {
+
+const template =`# ${title}
+  ## License:
+  [![license]](https://img.shields.io/badge/license-YOUR_LICENSE-WHATEVER_COLOR)
+  ## Table of Contents
+  *[Installation](#install)
+  *[Usage](#usage)
+  *[License](#license)
+  *[Contributing](#Contributing)
+  *[Tests](#tests)
+  *[Questions](#questions)
+  *[discription](#discription)
+
+  ## discription:
+  ${discription}
+  ## Installation:
+  ${install}
+  ## Usage
+  ${usage}
+  ## License
+  ${license}
+  ## Contributing
+  ${Contributing}
+  ## Tests
+  ${tests}
+  ## Questions
+  *${questions1}
+  *${questions2}
+  `
+createNewFile(title,template);
 });
+function createNewFile(fileName,data){
+  fs.writeFile(`./${fileName.toLowerCase().split('').join('')}.md`,data,(err)=>{
+    if(err){
+      console.log(err)
+    }
+    console.log('you are compleate');
+})}
