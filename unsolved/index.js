@@ -58,7 +58,7 @@ inquirer
 ])
 
 .then(({
-  title, install, usage, Contributing, tests, questions1, license, discription,
+  title, install, usage, Contributing, tests, questions1, license, description,
   questions2,
 }) => {
 
