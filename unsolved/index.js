@@ -66,13 +66,13 @@ const template =`# ${title}
   ## License:
   https://img.shields.io/apm/l/readme
   ## Table of Contents
-  *[discription](#discription)
-  *[Installation](#install)
-  *[Usage](#usage)
-  *[License](#license)
-  *[Contributing](#Contributing)
-  *[Tests](#tests)
-  *[Questions](#questions)
+  ### *[discription](#discription)
+  ### *[Installation](#install)
+  ### *[Usage](#usage)
+  ### *[License](#license)
+  ### *[Contributing](#Contributing)
+  ### *[Tests](#tests)
+  ### *[Questions](#questions)
 
   ## discription:
   ${discription}
@@ -87,8 +87,8 @@ const template =`# ${title}
   ## Tests
   ${tests}
   ## Questions
-  *${questions1}
-  *${questions2}
+  ### *${questions1}
+  ### *${questions2}
   `
 createNewFile(title,template);
 });
