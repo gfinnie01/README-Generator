@@ -19,9 +19,16 @@ inquirer
       name: 'usage',
     },
     {
-      type: 'input',
+      type: 'rawlist',
       message: 'what is the license that you used?',
       name: 'license',
+      choices: [
+        'MIT',
+        'GPL',
+        'Apache license',
+        'GNU',
+        'N/A'
+      ]
     },
     {
       type: 'input',
@@ -30,7 +37,7 @@ inquirer
     },
     {
       type: 'input',
-      message: 'waht questions are there?',
+      message: 'what is your github?',
       name: 'questions',
     },
 ])
